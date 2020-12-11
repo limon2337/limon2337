@@ -1,16 +1,16 @@
 t = 0
 def setup():
-    size (400,400)
+    fullScreen()
     background(t)
+    #frameRate (5)
 def draw():
     global t
     stroke (random(0,255),random ( 0,255) , random (0,255))
-    line ( random(0,400),random(0,400),random(0,400),random(0,400))
+    line ( random(0,width),random(0,height),   random(0,width),random(0,height))
     if t == 255:
         fill (200)
-    z = random (5,10)
-    ellipse ( random ( 0,400),random ( 0,400 ) , z , z )
-    stroke ( random (1,10))
+    z = random (5,50)
+    ellipse ( random ( z,width-z),random ( z,height-z ) , z , z )
 
        
 def mouseClicked():
