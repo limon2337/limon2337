@@ -1,0 +1,16 @@
+import pyautogui
+import time
+name=input("Число от 1 до 8")
+pyautogui.doubleClick(457,1057)
+pyautogui.hotkey('ctrl', 't')
+pyautogui.hotkey('ctrl', 't')
+pyautogui.hotkey('ctrl', 't')
+pyautogui.hotkey('ctrl', 't')
+pyautogui.hotkey('ctrl', 't')
+pyautogui.hotkey('ctrl', 't')
+pyautogui.hotkey('ctrl', 't')
+pyautogui.hotkey('ctrl', 't')
+pyautogui.hotkey('ctrl', 't')
+pyautogui.hotkey('ctrl', 't')
+time.sleep(3)
+pyautogui.hotkey('ctrl', name)
